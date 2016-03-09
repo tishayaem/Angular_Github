@@ -1,11 +1,13 @@
-describe('GitUserSearchController', function() {
-  beforeEach(module('GitUserSearch'));
-
+describe('GithubUserSearchController', function() {
+  
   var ctrl;
 
-  beforeEach(inject(function($controller) {
-    ctrl = $controller('GitUserSearchController');
-  }));
+  beforeEach(function(){
+    module('GithubUserSearch');
+    inject(function($controller) {
+      ctrl = $controller('GithubUserSearchController');
+    });
+  });
 
   it('initialises with an empty search result and term', function() {
     expect(ctrl.searchResult).toBeUndefined();
