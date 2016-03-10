@@ -1,4 +1,4 @@
-githubUserSearch.controller('GithubUserSearchController', [function() {
+githubUserSearch.controller('GithubUserSearchController', function() {
   var self = this;
 
   self.doSearch = function(){
@@ -17,4 +17,4 @@ githubUserSearch.controller('GithubUserSearchController', [function() {
     ]
   };
 };
-}]);
+});
