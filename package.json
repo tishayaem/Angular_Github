@@ -1,10 +1,13 @@
 {
   "name": "Angular_Github",
   "version": "1.0.0",
-  "description": "",
+  "description": "An Angular app for searching GitHub users",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "npm install",
+    "start": "http-server -a 0.0.0.0 -p 8000",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update-webdriver": "webdriver-manager update --standalone"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,8 @@
   },
   "homepage": "https://github.com/sara6/Angular_Github",
   "devDependencies": {
+    "bower": "^1.7.7",
+    "http-server": "^0.9.0",
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.22",
     "karma-chrome-launcher": "^0.2.2",
